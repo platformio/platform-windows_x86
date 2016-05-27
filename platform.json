@@ -1,0 +1,31 @@
+{
+  "name": "windows_x86",
+  "title": "Windows x86",
+  "description": "Windows x86 (32-bit) is a metafamily of graphical operating systems developed and marketed by Microsoft. Using host OS (Windows, Linux 32/64 or Mac OS X) you can build native application for Windows x86 platform.",
+  "url": "http://platformio.org/platforms/windows_x86",
+  "homepage": "http://platformio.org/platforms/windows_x86",
+  "license": {
+    "type": "Apache-2.0",
+    "url": "http://opensource.org/licenses/apache2.0.php"
+  },
+  "engines": {
+    "platformio": "~3.0.0",
+    "scons": ">=2.3.0,<2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-windows_x86.git"
+  },
+  "version": "0.0.0",
+  "packageRepositories": [
+    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
+    "https://sourceforge.net/projects/platformio-storage/files/packages/manifest.json/download",
+    "http://dl.platformio.org/packages/manifest.json"
+  ],
+  "packages": {
+    "toolchain-gccmingw32": {
+      "type": "toolchain",
+      "version": "^1,<1.40900.0"
+    }
+  }
+}
