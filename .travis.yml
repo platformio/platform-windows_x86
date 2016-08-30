@@ -1,13 +1,22 @@
 language: python
 python:
-    - "2.7"
+  - "2.7"
 
 env:
-    - PLATFORMIO_PROJECT_DIR=examples/hello-world
+  - PLATFORMIO_PROJECT_DIR=examples/hello-world
 
 install:
-    - pip install -U https://github.com/platformio/platformio/archive/feature/platformio-30.zip
-    - platformio platform install file://.
+  - pip install -U https://github.com/platformio/platformio/archive/develop.zip
+  - platformio platform install file://.
 
 script:
-    - platformio run -d $PLATFORMIO_PROJECT_DIR
+  - platformio run -d $PLATFORMIO_PROJECT_DIR
+
+notifications:
+  email: false
+
+  slack:
+    rooms:
+      secure: lDUpAT7KPfMSNcsgO4kxFL/SKqaFnk72RoO2ReQPns/5vUR+dLB3gz6/JJ3yy7vnmMzcwDrD2UfPA8pDm7Fw3NyYsaJKeTsQBYjaPk7HIBC6CAixKZG8lEzYobIDDzT74H8SUTXE6hlHDcCjUX4gGIjU+2pOT1Zk60Aftlg5NpiVjDJHcPL0h6Pc2weMPEw9vNIbp5v9t0F/qWmoTTUztDa3Qkjn9GzcW+BLwg2l6MME80N+xpAYw/9SzpQtX6YWLiXftGxXWqNvYvpkX+9T12jM8iXQ50zW6uueeUAiOjSU7vM2tmv8vcC9SIOyq7NvWSfXs1+ATNhBsnXsbWOG7EQ0spR26iDFctpQ0p+AoNzYRmuM80WawxLbd/RFBQMrVd7Zs81s+i+dsAnAy9jodDCU6j0Qmvq7OjRBd2FE//ULZA2dBK/tmLENX5cAumPevxWmn5+hy2E8NjG+GpoO7UVoxpGd3U7Up32cc2z+JB0hHcpJQ39tyW0gt25c3gdf3rQ0zCkEc4tRsroiCDZOJ6jXjbKrHBy5FhSvyzKgpdEVZ5xIOcBVEZu+9rwmbreJInb9xdIimVs+FkSFcloAQ67H6OISyy5NKHiGJSfxqXr+nUlrTQJQcnpJD294JNOBMhjJOP2+ggxrQdVb0YTQ+fB+rkIEDjHVmL+ZXoIF0r8=
+    on_failure: always
+    on_success: change
