@@ -10,7 +10,7 @@ Windows x86 (32-bit) is a metafamily of graphical operating systems developed an
 1. [Install PlatformIO CLI](http://docs.platformio.org/en/latest/installation.html)
 2. Install Windows x86 development platform:
 ```bash
-# isntall the latest stable version
+# install the latest stable version
 > platformio platform install windows_x86
 
 # install development version
