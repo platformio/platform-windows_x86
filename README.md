@@ -1,4 +1,5 @@
 # Windows x86: development platform for [PlatformIO](http://platformio.org)
+[![Build status](https://ci.appveyor.com/api/projects/status/4tqtddjgafvwawmn/branch/develop?svg=true)](https://ci.appveyor.com/project/ivankravets/platform-windows-x86/branch/develop)
 
 Windows x86 (32-bit) is a metafamily of graphical operating systems developed and marketed by Microsoft. Using host OS (Windows, Linux 32/64 or Mac OS X) you can build native application for Windows x86 platform.
 
