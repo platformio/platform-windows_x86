@@ -36,6 +36,14 @@ env.Replace(
     PROGSUFFIX=".exe"
 )
 
+env.Append(
+    LINKFLAGS=[
+        "-static",
+        "-static-libgcc",
+        "-static-libstdc++"
+    ]
+)
+
 if get_systype() == "darwin_x86_64":
     env.Replace(
         _BINPREFIX="i586-mingw32-"
