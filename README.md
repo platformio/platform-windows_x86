@@ -4,11 +4,11 @@
 Windows x86 (32-bit) is a metafamily of graphical operating systems developed and marketed by Microsoft. Using host OS (Windows, Linux 32/64 or Mac OS X) you can build native application for Windows x86 platform.
 
 * [Home](http://platformio.org/platforms/windows_x86) (home page in PlatformIO Platform Registry)
-* [Documentation](http://docs.platformio.org/en/stable/platforms/windows_x86.html) (advanced usage, packages, boards, frameworks, etc.)
+* [Documentation](http://docs.platformio.org/page/platforms/windows_x86.html) (advanced usage, packages, boards, frameworks, etc.)
 
 # Usage
 
-1. [Install PlatformIO CLI](http://docs.platformio.org/en/stable/installation.html)
+1. [Install PlatformIO Core](http://docs.platformio.org/page/core.html)
 2. Install Windows x86 development platform:
 ```bash
 # install the latest stable version
