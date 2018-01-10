@@ -8,12 +8,27 @@ Windows x86 (32-bit) is a metafamily of graphical operating systems developed an
 
 # Usage
 
-1. [Install PlatformIO Core](http://docs.platformio.org/page/core.html)
-2. Install Windows x86 development platform:
-```bash
-# install the latest stable version
-> platformio platform install windows_x86
+1. [Install PlatformIO](http://platformio.org)
+2. Create PlatformIO project and configure a platform option in [platformio.ini](http://docs.platformio.org/page/projectconf.html) file:
 
-# install development version
-> platformio platform install https://github.com/platformio/platform-windows_x86.git
+## Stable version
+
+```ini
+[env:stable]
+platform = windows_x86
+board = ...
+...
 ```
+
+## Development version
+
+```ini
+[env:development]
+platform = https://github.com/platformio/platform-windows_x86.git
+board = ...
+...
+```
+
+# Configuration
+
+Please navigate to [documentation](http://docs.platformio.org/page/platforms/windows_x86.html).
