@@ -26,7 +26,7 @@ How to build PlatformIO based project
     > platformio run
 
     # Run program
-    > .pioenvs/native/program
+    > .pio\build\windows_x86\program.exe
 
     # Clean build files
     > platformio run --target clean
