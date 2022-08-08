@@ -14,7 +14,7 @@ $ cd platform-windows_x86/examples/hello-world
 $ pio run
 
 # Run program
-> .pioenvs/native/program
+> .pio/native/program
 
 # Clean build files
 $ pio run --target clean
